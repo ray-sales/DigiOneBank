@@ -1,14 +1,19 @@
 package one.digitalInnovation.digionebank
 
 class People {
-    var name: String = "Ray"
-    var cpf: String = "123.456.789-90"
+    var name: String = ""
+    var cpf: String = ""
     private set
+    constructor(name:String, cpf:String){
+        this.name = name
+        this.cpf = cpf
+    }
+
+    fun joinPersonInfo() = "$name and $cpf"
 }
 
 fun main(){
-    val rayssa = People()
-    println(rayssa.name)
-    println(rayssa.cpf)
+    val peopleRay = People("Ray", "555555")
+    println(peopleRay.joinPersonInfo())
 
 }
