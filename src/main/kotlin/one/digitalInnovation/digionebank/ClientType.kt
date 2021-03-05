@@ -1,8 +1,8 @@
 package one.digitalInnovation.digionebank
 
-enum class ClientType(descricao: String) {
+enum class ClientType(val description: String) {
     PF("Pessoa Física"),
-    PJ("Pessoa Júridica");
+    PJ("Pessoa Júridica")
 
 
 }
